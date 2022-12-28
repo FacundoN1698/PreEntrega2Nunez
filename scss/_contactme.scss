@@ -1,0 +1,94 @@
+@import 'variables';
+
+/* contact me */
+.contactme {
+    // 
+    background-image: url('../images/bg-dc.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-block: 100px $section-padding;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+
+.contact-card {
+    background-color: rgba(0, 0, 0, 0.448);
+    padding: 50px 25px;
+    border-radius: $radius-20;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+
+    &:hover{
+        box-shadow: 0px 15px 20px $btn-box2;
+        transition: all 0.3s ease 0s;
+    }
+
+    
+    & .card-subtitle{
+        color: $white;
+        font-family: $ff-open-sans;
+        font-size: $fs-4;
+        font-weight: $fw-600;
+        border: none;
+        outline: none;
+    }
+}
+.contact .section-title {
+    text-align: left;
+    margin-block-end: 30px;
+}
+.contact-form { margin-block-end: 50px; }
+.contact-input {
+    background-color: $white;
+    color: $manatee;
+    border-radius: $radius-5;
+    padding: 15px 25px;
+    font-size: $fs-5;
+    margin-block-end: 15px;
+}
+.contact-input::placeholder { color: inherit; }
+    textarea.contact-input {
+    resize: vertical;
+    min-height: 100px;
+    height: 180px;
+    max-height: 300px;
+}
+.btn-submit {
+    background-color: $orange-soda;
+    color: $white;
+    font-family: $ff-open-sans;
+    font-size: $fs-5;
+    width: 100%;
+    padding: 10px;
+    border-radius: $radius-5;
+    transition: $transition-2;
+
+    &:is(:hover, :focus) {
+    background-color: $white;
+    color: $black;
+}
+}
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    &:not(:last-child) { margin-block-end: 20px; }
+}
+.contact-icon {
+    background-color: $glaucous;
+    font-size: 2.4rem;
+    padding: 20px;
+    border-radius: 50%;
+}
+.contact-item-title {
+    color: $white;
+    font-family: $ff-barlow;
+    font-size: $fs-4;
+    font-weight: $fw-600;
+}
+.contact-item-link { 
+    transition: $transition-1;
+    &:not(address):is(:hover, :focus) { color: $white; }
+}

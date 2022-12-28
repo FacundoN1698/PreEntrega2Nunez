@@ -1,0 +1,58 @@
+@import 'variables';
+
+.hero-games {
+    // 
+    background-image: url('../images/games.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-block: 100px $section-padding;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+}
+.games{
+    width: 343px;
+
+    &:hover{
+        transform: scale(1.1);
+        transition: $transition-2;
+    }
+}
+/* More Information */
+.portfolio{
+    background-color: $black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-block: 100px $section-padding;
+    min-height: 100vh;
+    display: flex;
+    place-items: center;
+
+    &-list {
+    display: grid;
+    gap: 60px;
+
+    &> li:nth-child(even) .card-content { margin-inline-start: auto; }
+
+    }
+
+    &-card {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 120px 20px;
+    border-radius: $radius-20;
+    }
+}
+
+
+// &:hover{
+//         transform: scale(1.4);
+//     }
+// .portfolio-card:hover{
+//         transform: scale(1.4);
+//         transition: $transition-2;
+    
+// }

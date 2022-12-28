@@ -1,0 +1,222 @@
+@import 'variables';
+
+/* #RESET */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+li { list-style: none; 
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+a,
+img,
+span,
+input,
+strong,
+button,
+textarea,
+ion-icon { display: block; 
+}
+img { height: auto;
+}
+ion-icon {
+    pointer-events: none;
+    color: $white;
+}
+
+button,
+input,
+textarea {
+    background: none;
+    border: none;
+    font: inherit;
+}
+button { cursor: pointer;
+}
+input,
+textarea { width: 100%;
+}
+address { font-style: normal;
+}
+html{
+    font-size: 10px;
+    font-family: $ff-open-sans;
+    scroll-behavior: smooth;
+}
+body {
+    background-color: $space-cadet;
+    color: $white;
+    font-size: 1.6rem;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+:focus-visible { outline-offset: 4px; }
+::-webkit-scrollbar { 
+    width: 15px; 
+    &-track {
+        background-color: hsl(0, 0%, 95%);
+    }
+    &-thumb{
+        background-color: hsl(0, 0%, 80%);
+        &:hover{
+            background-color: hsl(0, 0%, 70%);
+        }
+    }
+}
+/* reused style */
+.container { padding-inline: 20px; }
+
+.btn {
+    padding: 1.3em 3em;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: $white;
+    background-color: $btn-bg;
+    border: none;
+    border-radius: 45px;
+    max-width: max-content;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+
+    &:hover {
+        background-color: $btn-hover;
+        box-shadow: 0px 15px 20px $btn-box2;
+        color: #fff;
+        transform: translateY(-7px);
+    }
+
+    &:active {
+        transform: translateY(-1px);
+    }
+
+}
+.img-cover {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin: 98px 10px;
+}
+.section { 
+    padding-block: $section-padding; 
+    &-subtitle{
+        color: $white;
+        font-family: $ff-barlow;
+        font-size: 20px;
+        text-align: center;
+    }
+}
+.h2,
+.h3 {
+    color: $white;
+    font-family: $ff-barlow;
+    font-weight: $fw-600;
+    line-height: 1.3;
+}
+.h2 { font-size: $fs-2; }
+.h3 { font-size: $fs-3; }
+.section-title,
+.section-text { text-align: center; }
+
+/* #hero */
+.elem,
+.hero {
+    background-image: url("../images/hero-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-block: 100px $section-padding;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    &-banner{
+        width: 150px;
+        height: 172px; 
+        border-radius: $radius-10;
+        margin-inline: auto;
+        margin-block-end: 100px;
+        & img{
+            border-radius: inherit;
+        }
+    }
+    &-content{
+        text-align: center;
+        color: $white;
+    }
+    &-tittle {
+        font-family: $ff-barlow;
+        font-size: $fs-5;
+        font-weight: $fw-600;
+        line-height: 1.3;
+        margin-block-end: 14px;
+
+        & strong {
+            font-size: $fs-1;
+            font-weight: inherit;
+            margin-block-end: 8px;
+        }
+    }
+    &-text{
+        margin-block-end: 25px;
+    }
+}
+.btn-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+} 
+/* #about */
+.abs-img,
+.abs-icon { display: none; }
+.about { padding-block-start: 120px; }
+.about-banner {
+    background-color: $independence;
+    border-radius: $radius-10;
+    margin-block-end: 30px;
+}
+.about-banner > .img-cover { border-radius: inherit; }
+
+/* comics */
+.skills .section-title { margin-block-end: 20px; }
+.skills .section-text { margin-block-end: 70px; }
+.skills-list {
+    display: grid;
+    gap: 25px;
+}
+.skills-item .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-block-end: 10px;
+}
+.skills-title,
+.skills-data {
+    color: $white;
+    font-size: $fs-5;
+    font-family: $ff-barlow;
+    font-weight: $fw-600;
+}
+.skills-progress-box {
+    background-color: $white;
+    height: 8px;
+    border-radius: $radius-10;
+}
+.skills-progress {
+    background-color: $orange-soda;
+    height: 100%;
+    border-radius: inherit;
+}
+
+

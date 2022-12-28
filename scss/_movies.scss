@@ -1,0 +1,13 @@
+@import 'variables';
+
+.movie {
+    // 
+    background-image: url('../images/bg-dc.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-block: 100px $section-padding;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+}
