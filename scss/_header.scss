@@ -1,4 +1,6 @@
 @import 'variables';
+
+
 .header {
     position: fixed;
     padding-block: 15px;
@@ -28,6 +30,11 @@
 .nav-toggle-btn.active .close-icon,
 .nav-toggle-btn .menu-icon { display: block; }
 .navbar {
+    height: 100px;
+    display:         flex;
+    justify-content: space-between;
+    align-items:     center;
+    padding: 0 120px;
     position: absolute;
     top: 82px;
     left: 0;
